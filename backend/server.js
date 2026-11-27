@@ -9,8 +9,13 @@ const authRoutes = require('./routes/authRoutes');
 
 const app = express();
 
-// Middleware
-app.use(cors());
+// Middleware - CORS Configuration
+app.use(cors({
+  origin: 'https://maguva-mandir.pages.dev',
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization']
+}));
+
 app.use(express.json());
 
 // Backend test
