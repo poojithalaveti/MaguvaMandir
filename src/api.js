@@ -1,5 +1,5 @@
 
-const API_URL = 'http://localhost:5000/api';
+const API_URL = 'https://maguva-mandir-backend.onrender.com/api';
 
 // Owner Login
 export const ownerLogin = async (password) => {
